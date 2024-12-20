@@ -1,2 +1,1 @@
-# REDIS-TUTORIAL
-A Comprehensive tutorial to get a crispy knowledge about redis
+# REDIS-TUTORIAL ![My Skills](https://simpleskill.icons.workers.dev/svg?i=redis) [![My Skills](https://skillicons.dev/icons?i=redis)](https://skillicons.dev)
