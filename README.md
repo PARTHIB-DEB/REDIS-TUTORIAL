@@ -20,7 +20,35 @@ Have a look on the points below :
 - **Pub-Sub Architechture**: Redis includes a publish/subscribe messaging paradigm, which can be used for real-time projects , offering functionality beyond simple caching.
 
 # Installation 📋
+Here is the quick installation guide :
+- Install Redis based on your dependent OS from this link ➡️ [link](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/) .
+  OR
+  Run the following Command (Only for Linux Users - WSL & Boot) -
+  ```bash
+    sudo base-pkg-manager install redis
+    sudo base-pkg-manager install valkey-server #WSL
+    or
+    sudo base-pkg-manager install valkey #WSL
+  ```
 
+- Only for Linux (both WSL and Boot Users) run the follwing -
+  ```bash
+    sudo systemctl enable redis #May not work in WSL
+  ```
+- To start , stop and see server status for Linux users :
+  
+  **Boot-Linux** :
+    ```bash
+      sudo systemctl start redis or valkey
+      sudo systemctl status redis or valkey
+      sudo systemctl stop redis or valkey
+    ```
+  **WSL-Linux**:
+    ```bash
+      sudo service valkey-server start
+      sudo service valkey-server status
+      sudo service valkey-server stop
+    ```
 # RESP (Redis Serialization Protocol) 💻
 
 # Data Structures ⛓️
