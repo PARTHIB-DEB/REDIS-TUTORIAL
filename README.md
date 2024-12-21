@@ -1,5 +1,5 @@
 # REDIS-TUTORIAL [![My Skills](https://simpleskill.icons.workers.dev/svg?i=redis)](https://redis.io/) [![My Skills](https://skillicons.dev/icons?i=redis)](https://redis.io/)
-Redis - Remote Dictionary Server . Built by Salvatore Sanfilippo (known as antirez) in 2009. **Redis Labs** (Formally known as **Garantia Data**) , is the organisation which maintains redis.
+Redis - Remote Dictionary Server . Built by Salvatore Sanfilippo (known as antirez) in 2009. **Redis Labs** (Previously knew as **Garantia Data**) , is the organisation which maintains redis.
 
 # Major changes in 2024 💡
 Maybe some of us has got a recent spiced up news of redis's sudden license change which created an internal conflict within the organisation. Redis changed its previous license **BSD 3-Clause Model** to **Dual-License Model** (Interested Peeps can check out this news on web). What this change caused , is a born of a new project - **Valkey** (supported by Linux Foundation also)
