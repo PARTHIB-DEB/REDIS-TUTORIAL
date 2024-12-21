@@ -39,9 +39,9 @@ Here is the quick installation guide :
   
   **Boot-Linux** :
     ```bash
-      sudo systemctl start redis or valkey
-      sudo systemctl status redis or valkey
-      sudo systemctl stop redis or valkey
+      sudo systemctl start <redis or valkey>
+      sudo systemctl status <redis or valkey>
+      sudo systemctl stop <redis or valkey>
     ```
   **WSL-Linux**:
     ```bash
