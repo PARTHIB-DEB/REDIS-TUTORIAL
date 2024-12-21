@@ -11,11 +11,13 @@ Developers who built redis under previous license came in **Valkey**. Redis unde
 Have a look on the points below :
 - **In-Memory**: Redis is an In-Memory product , means it stores user's data in RAM . Also we know that RAM is volatile and only necessary datas are stored inside ram which got removed when the computer shuts down. That happens with Redis also.
 
-- **Database or not**: A contoversial point and many will consider Redis as a database also , but what its documentation says **Data Structure Store - [link](https://redis.io/docs/latest/develop/get-started/data-store/)**. That simply means Redis uses its own data structres to store data - It doesn't tell any thing about schema or document or storing in SSD/HDDs like normal DBs. Even though you can use libraries like **Redis-Om - [link](https://redis.io/blog/introducing-redis-om-client-libraries/)** which helps to decorate raw data in a format , yet that doesn't define anything on behalf of Redis , but if you are using redis' 8.0x versions then you may get some features where redis will take snapshots of user's data and will put them in SSD/HDDs. 
+- **Database or not**: A contoversial point and many will consider Redis as a database also , what its documentation says **Data Structure Store - [link](https://redis.io/docs/latest/develop/get-started/data-store/)**. Although we can use redis as a document-based database but for that we need **redis-cloud** - ([link](https://redis.io/docs/latest/develop/get-started/document-database/)) . At this point you can utilize redis-cloud but remember , **redis is primarliy storing data in your device's RAM , then if you have chosen Redis-cloud , you may shift your datas to a cloud instance (sounds like mongodb-atlas but a little different)**. Else you can use **redis-om (https://redis.io/blog/introducing-redis-om-client-libraries/)** for giving a proper structure to raw datas.
 
-- **Lua Scripting**:
+- **Lua Scripting**: Lua is an lightweight language , majorly used for embedded programming. In Redis, Lua scripting enables users to write scripts that can perform complex operations directly on the server side. This means that instead of sending multiple commands from a client to the server, **users can bundle these commands into a single Lua script and execute it with one call.**
 
-- **Data Structures and Atomicity**
+- **Data Structures and Atomicity**: 
+
+- **Pub-Sub Architechture**:
 
 # Installation 📋
 
