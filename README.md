@@ -15,9 +15,9 @@ Have a look on the points below :
 
 - **Lua Scripting**: Lua is an lightweight language , majorly used for embedded programming. In Redis, Lua scripting enables users to write scripts that can perform complex operations directly on the server side. This means that instead of sending multiple commands from a client to the server, **users can bundle these commands into a single Lua script and execute it with one call.**
 
-- **Data Structures and Atomicity**: 
+- **Data Structures and Atomicity**: Primarily redis has 9 data-structures (each will be dicussed later) where each of them has individual set of operations that used to play with datas. These sets of operations are seperate from each other which creates a layer of atomicity in redis. 
 
-- **Pub-Sub Architechture**:
+- **Pub-Sub Architechture**: Redis includes a publish/subscribe messaging paradigm, which can be used for real-time projects , offering functionality beyond simple caching.
 
 # Installation 📋
 
