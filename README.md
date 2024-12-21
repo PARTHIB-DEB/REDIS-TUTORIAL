@@ -11,7 +11,7 @@ Developers who built redis under previous license came in **Valkey**. Redis unde
 Have a look on the points below :
 - **In-Memory**: Redis is an In-Memory product , means it stores user's data in RAM . Also we know that RAM is volatile and only necessary datas are stored inside ram which got removed when the computer shuts down. That happens with Redis also.
 
-- **Database or not**: A contoversial point and many will consider Redis as a database also , but what its documentation says - 
+- **Database or not**: A contoversial point and many will consider Redis as a database also , but what its documentation says **Data Structure Store - [link](https://redis.io/docs/latest/develop/get-started/data-store/)**. That simply means Redis uses its own data structres to store data - It doesn't tell any thing about schema or document or storing in SSD/HDDs like normal DBs. Even though you can use libraries like **Redis-Om - [link](https://redis.io/blog/introducing-redis-om-client-libraries/)** which helps to decorate raw data in a format , yet that doesn't define anything on behalf of Redis , but if you are using redis' 8.0x versions then you may get some features where redis will take snapshots of user's data and will put them in SSD/HDDs. 
 
 - **Lua Scripting**:
 
