@@ -50,6 +50,7 @@ Here is the quick installation guide :
       sudo service valkey-server stop
     ```
 # RESP (Redis Serialization Protocol) 💻
+W
 
 
 # Redis Query Engine 🚒
