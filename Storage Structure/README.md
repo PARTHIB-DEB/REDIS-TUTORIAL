@@ -4,7 +4,7 @@
 
 - Redis stores data as _Key-Value Pairs_ . Redis keys are always of datatype **String** . What changes , is the datatype of values.
 
-- Redis stores user's data in SINGLE KEY-VALUE CHAIN always
+- Redis stores user's data in SINGLE KEY-VALUE CHAIN always . So don't mix it up with other JSON based DS 😏
 
 - By default , redis stores the data in server running at port **6379**
 
