@@ -56,3 +56,16 @@ What made redis special , is RESP . The standalone protocol , responsible for co
 The engine behind proper searches and queries . Redis query engine gives different excellent features consisting of vector search , full-text search , aggregation pipeline and many more. Due to RQI , redis can be used as a **vector database** , **NoSQL Document Database** and many more - [link](https://redis.io/docs/latest/develop/interact/search-and-query/)
 
 # Data Structures ⛓️
+Redis has 9 types of different data structures . Each with different taste and capabilities , given below . You can read more about them here ➡️ [link](https://redis.io/docs/latest/develop/data-types/) :
+
+  - String
+  - Hash
+  - List
+  - Set
+  - Sorted Sets
+  - Stream
+  - Bitmap
+  - Bitfield
+  - Geospatial
+    
+Go to _Data Structures 📁_ to know each DS with more details
