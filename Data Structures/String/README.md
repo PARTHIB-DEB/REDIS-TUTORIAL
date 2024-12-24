@@ -16,4 +16,30 @@ Strings are the most common datatype in Redis . Pretty much everything can be st
       127.0.0.1:6379> GET family:A1      # Value -> Father:Samuel
       "Father:Samuel"
     ```
+  - ## DEL
+    DEL simply means DELETE , Yes its DELETES the Key with its Value.
 
+    ```bash
+      127.0.0.1:6379> DEL family
+      (integer) 0
+      127.0.0.1:6379> DEL family:A1
+      (integer) 1
+    ```
+ Now before moving furthur to more commands , let's create a whole damn family 😆 in redis .
+
+ ```bash
+   127.0.0.1:6379> SET family:A1:Father samuel
+   OK
+   127.0.0.1:6379> GET family:A1
+   (nil)
+   127.0.0.1:6379> GET family:A1:Father
+   "samuel"
+   127.0.0.1:6379> SET family:A1:Mother Maria
+   OK
+   127.0.0.1:6379> GET family:A1:Mother
+   "Maria"
+   127.0.0.1:6379> SET family:A1:Uncle Nick nx
+   OK
+   127.0.0.1:6379> GET family:A1:Uncle
+   "Nick"
+ ```
