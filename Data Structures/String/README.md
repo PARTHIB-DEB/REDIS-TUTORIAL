@@ -108,9 +108,9 @@ To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
      "2"
     ```
   - ## SETRANGE , GETRANGE
-    To GET complete/part of string we use SETRANGE
+    To GET complete/part of string we use GETRANGE
 
-    To SET complete/part of string - _from a given index to rest_ -  with some new string (SUBSTR also does the same but it got deprecated from redis V2.0 , watch ➡️ [link](https://redis.io/docs/latest/commands/substr/))
+    To SET/Substitute complete/part of string - _from a given index to rest_ - with some new string we use SETRANGE (SUBSTR also does the same but it got deprecated from redis V2.0 , watch ➡️ [link](https://redis.io/docs/latest/commands/substr/))
 
     ```bash
        127.0.0.1:6379> SET mystr "This is a demo string"
