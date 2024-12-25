@@ -8,6 +8,10 @@
 
 - By default , redis stores the data in server running at port **6379**
 
+# How Redis Commands Works
+
+Redis commands always hit the key first . It takes the key as a primary argument and then it does something with the value (create update) . Even though when we SET any value , the **value** part comes after mentioning **key**
+
 # Basic Redis Commands
 
 The snippet explains a general way to create , save and update user's data.
