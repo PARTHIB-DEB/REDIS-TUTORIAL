@@ -124,5 +124,28 @@ To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
        127.0.0.1:6379> GET mystr
        "This is a demoNEW STRING"
     ```
+  - ## EXISTS
+    Check if a Key exists or not
+
+    ```bash
+       127.0.0.1:6379> EXISTS mykey
+       (integer) 0
+    ```
+  - ## APPEND
+    Add a string value at the end of a pre-existing value (if nill then new value) of a key
+
+    ```bash
+       127.0.0.1:6379> EXISTS mykey
+       (integer) 0
+       127.0.0.1:6379> APPEND mykey myvalue
+       (integer) 7
+       127.0.0.1:6379> GET mykey
+       "myvalue"
+       127.0.0.1:6379> APPEND mykey " is a value"
+       (integer) 18
+       127.0.0.1:6379> GET mykey
+       "myvalue is a value"
+    ```
+
 
 
