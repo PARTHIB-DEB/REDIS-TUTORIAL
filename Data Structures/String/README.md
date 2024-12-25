@@ -63,7 +63,7 @@ Strings are the most common datatype in Redis . Pretty much everything can be st
 To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
 
   - ## GETSET
-    GETSET is a command which creates/updates a value of a key . It basically SETs the new value and returns the old value of a key . Look at the snippet below ,
+    GETSET is a command which creates/updates a value of a key . Basically It SETs the new value and returns the old value of a key . Look at the snippet below ,
     
     ```bash
      127.0.0.1:6379> GETSET ckey 1   # No Previous key 'ckey' , so creating new and returning 'nil'
@@ -73,4 +73,30 @@ To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
     127.0.0.1:6379> GETSET family:A1:Uncle Damian  # Key exists , hence old value returned
      "Nick"
     ```
+  - ## MSET & MGET
+    MSET (Multiple SET) is used for setting multiple values to multiple keys and MGET is to fetch multiple values of multiple keys
+
+    ```bash
+     127.0.0.1:6379> MSET family:A2:Father "Joseph"  family:A3:Father "Alex"
+     OK
+     127.0.0.1:6379> MGET family:A2:Father family:A3:Father
+     1) "Joseph"
+     2) "Alex"
+    ```
+  - ## INCR , INCRBY , DECR , DECRYBY
+    When we store any INTEGER in a STRING value and link it to a key - it is called as COUNTER value . Remember here the value must be INTEGER only . Hence we can use this commands to change the numerical value of the key
+    
+    ```bash
+     127.0.0.1:6379> SET pkey 100
+     OK
+     127.0.0.1:6379> INCR pkey   # Increase by 1
+     (integer) 101
+     127.0.0.1:6379> INCRBY pkey 10    # Increase by custom value - 10
+     (integer) 111
+     127.0.0.1:6379> DECR pkey    # Decrease by 1
+     (integer) 110
+     127.0.0.1:6379> DECRBY pkey 9    # Decrease by custom value - 9
+     (integer) 101
+    ```
+
 
