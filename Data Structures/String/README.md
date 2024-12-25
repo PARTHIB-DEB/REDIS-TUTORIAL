@@ -146,6 +146,47 @@ To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
        127.0.0.1:6379> GET mykey
        "myvalue is a value"
     ```
+  - ## STRLEN
+    Return the length of the value of a key
+
+    ```bash
+       127.0.0.1:6379> STRLEN mykey
+       (integer) 18
+    ```
+  - ## LCS
+    LCS - Longest Common SubSequence (Not String) . Yeah ! No coding 😄 , just use this command to get the result.
+    It takes two keys as args and give the longest susbsequence as result
+
+    ```bash
+       127.0.0.1:6379> SET mykey02 "This is not ancdewd value"
+       OK
+       127.0.0.1:6379> GET mykey
+       "myvalue is a value"
+       127.0.0.1:6379> LCS mykey mykey02
+       " is a value"
+       127.0.0.1:6379> LCS mykey02 mykey
+       " is a value"
+       127.0.0.1:6379> LCS mykey mykey02 LEN   # Length of the subsequence
+       (integer) 11
+       127.0.0.1:6379> LCS mykey mykey02 IDX   # Match positions between two strings
+       1) "matches"
+       2) 1) 1) 1) (integer) 12
+                2) (integer) 17
+             2) 1) (integer) 19
+                2) (integer) 24
+          2) 1) 1) (integer) 10
+                2) (integer) 11
+             2) 1) (integer) 11
+                2) (integer) 12
+          3) 1) 1) (integer) 7
+                2) (integer) 9
+             2) 1) (integer) 4
+                2) (integer) 6
+       3) "len"
+       4) (integer) 11
+    ```
+At this moment , if you want to know more about each command's Time Complexity and more about other commands of Strings ,
+check out this link ➡️ [link](https://redis.io/docs/latest/commands/?group=string)
 
 
 
