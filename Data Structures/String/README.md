@@ -38,8 +38,28 @@ Strings are the most common datatype in Redis . Pretty much everything can be st
    OK
    127.0.0.1:6379> GET family:A1:Mother
    "Maria"
-   127.0.0.1:6379> SET family:A1:Uncle Nick nx
+   127.0.0.1:6379> SET family:A1:Uncle Nick nx    # Nick is not a value
    OK
    127.0.0.1:6379> GET family:A1:Uncle
    "Nick"
+   127.0.0.1:6379> SET family:A1:Uncle Nick nx    # Nick is already a value
+   (nil)
+   127.0.0.1:6379> SET family:A1:Uncle Nick xx    # # Nick is already a value
+   OK
+   127.0.0.1:6379> GET family:A1:Uncle
+   "Nick"
+   127.0.0.1:6379> SET family:A1:Grandmother univea nx
+   OK
+   127.0.0.1:6379> SET family:A1:Grandmother univea xx
+   OK
+
  ```
+❗**nx** : nx is a secondary argument which tells **to set the value if it doesn't exists** , basically a **new value**
+
+❗**xx** : xx is a secondary argument which tells **to set the value if it exists**
+
+⭐ **nx , xx** are two arguments of **SET** command
+
+To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
+
+
