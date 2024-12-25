@@ -62,4 +62,15 @@ Strings are the most common datatype in Redis . Pretty much everything can be st
 
 To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
 
+  - ## GETSET
+    GETSET is a command which creates/updates a value of a key . It basically SETs the new value and returns the old value of a key . Look at the snippet below ,
+    
+    ```bash
+     127.0.0.1:6379> GETSET ckey 1   # No Previous key 'ckey' , so creating new and returning 'nil'
+     (nil)
+     127.0.0.1:6379> GET ckey
+     "1"
+    127.0.0.1:6379> GETSET family:A1:Uncle Damian  # Key exists , hence old value returned
+     "Nick"
+    ```
 
