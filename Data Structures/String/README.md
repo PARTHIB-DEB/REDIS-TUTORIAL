@@ -107,5 +107,22 @@ To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
      127.0.0.1:6379> GET family:A1:pets
      "2"
     ```
+  - ## SETRANGE , GETRANGE
+    To GET complete/part of string we use SETRANGE
+
+    To SET complete/part of string - _from a given index to rest_ -  with some new string (SUBSTR also does the same but it got deprecated from redis V2.0 , watch ➡️ [link](https://redis.io/docs/latest/commands/substr/))
+
+    ```bash
+       127.0.0.1:6379> SET mystr "This is a demo string"
+       OK
+       127.0.0.1:6379> GET mystr
+       "This is a demo string"
+       127.0.0.1:6379> GETRANGE mystr 0 9
+       "This is a "
+       127.0.0.1:6379> SETRANGE mystr 14 "NEW STRING"
+       (integer) 24
+       127.0.0.1:6379> GET mystr
+       "This is a demoNEW STRING"
+    ```
 
 
