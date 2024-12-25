@@ -98,6 +98,14 @@ To know more about ➡️ [link](https://redis.io/docs/latest/commands/set/)
      (integer) 110
      127.0.0.1:6379> DECRBY pkey 9    # Decrease by custom value - 9
      (integer) 101
+     127.0.0.1:6379> SET family:A1:pets 1
+     OK
+     127.0.0.1:6379> GET family:A1:pets
+     "1"
+     127.0.0.1:6379> INCR family:A1:pets
+     (integer) 2
+     127.0.0.1:6379> GET family:A1:pets
+     "2"
     ```
 
 
