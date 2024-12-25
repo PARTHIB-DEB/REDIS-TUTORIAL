@@ -55,6 +55,7 @@ Strings are the most common datatype in Redis . Pretty much everything can be st
 
  ```
 ❗**nx** : nx is a secondary argument which tells **to set the value if it doesn't exists** , basically a **new value**
+            (Or You can use **SETNX** command also , same result will happen)
 
 ❗**xx** : xx is a secondary argument which tells **to set the value if it exists**
 
