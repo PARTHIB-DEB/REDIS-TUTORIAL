@@ -17,4 +17,4 @@ Notable Lists commands are used in the snippets below :
 - ## BLPOP
 - ## BLMOVE
 
-To know mor about _list commands_ , explore here ➡️ [link](https://redis.io/docs/latest/commands/?group=list)
+To know more about _list commands_ , explore here ➡️ [link](https://redis.io/docs/latest/commands/?group=list)
