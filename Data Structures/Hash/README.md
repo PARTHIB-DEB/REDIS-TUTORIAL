@@ -79,6 +79,16 @@ To use Hashing , we need a hash-index which will hold the fields and values , or
        2) "green"
        3) "XOG Bullseye"
     ```
+    
+  - ## HVALS
+    just shows all the values of all fields of a hash-index
+
+    ```bash
+       127.0.0.1:6379> HVALS car:1
+       1) "lamborgini"
+       2) "green"
+       3) "XOG Bullseye"
+    ```
 
 💡For more commands , explore at here ➡️ [link](https://redis.io/docs/latest/commands/?group=hash)
 
