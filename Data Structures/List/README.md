@@ -118,7 +118,7 @@ Notable Lists commands are used in the snippets below :
 - ## BLPOP
 
   Blocks LPOP operation upto certain timelimits and then LPOP happens .
-  It just takes the time-limits as arguments and POPS from Leftside after that time-limits
+  It just takes the time-limits as arguments and POPS from Leftside after that time-limits expire
 
   ```bash
      127.0.0.1:6379> BLPOP mystack 1
