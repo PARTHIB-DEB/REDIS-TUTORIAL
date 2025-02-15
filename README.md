@@ -1,4 +1,7 @@
 # REDIS-TUTORIAL [![My Skills](https://simpleskill.icons.workers.dev/svg?i=redis)](https://redis.io/) [![My Skills](https://skillicons.dev/icons?i=redis)](https://redis.io/)
+
+_**If you want to contribute in this repository , Go to the contribute branch**_
+
 Redis - Remote Dictionary Server . Built by Salvatore Sanfilippo (known as antirez) in 2009. **Redis Labs** (Previously knew as **Garantia Data**) , is the organisation which maintains redis.
 
 # Major changes in 2024 💡
