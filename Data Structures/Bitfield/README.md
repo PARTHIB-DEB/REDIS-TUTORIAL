@@ -34,7 +34,7 @@ There is only one single command with numerous arguments - **BITFIELD**
   ```
 
 
-💡For more commands , explore at here ➡️ [link](https://redis.io/docs/latest/commands/bitfield/)
+💡To know more about BITFIELD explore at here ➡️ [link](https://redis.io/docs/latest/commands/bitfield/)
 
 
     
