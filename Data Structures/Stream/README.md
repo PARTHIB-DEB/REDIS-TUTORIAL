@@ -8,7 +8,7 @@ Redis generates a unique ID for each stream entry. You can use these IDs to retr
 
 ❗ Note that because these IDs are related to time, the ones shown here may vary and will be different from the IDs you see in your own Redis instance.
 
-To Understand **Streams** , read the content here ➡️ ![link](https://medium.com/redis-with-raphael-de-lio/understanding-redis-streams-33aa96ca7206)
+To Understand **Streams** , read the content here ➡️ [link](https://medium.com/redis-with-raphael-de-lio/understanding-redis-streams-33aa96ca7206)
 
 # Usecases
 
