@@ -17,8 +17,10 @@ The command treats a Redis string as an array of bits, and is capable of address
 
 for example, a signed 5 bits integer at bit offset 1234 to a specific value, retrieve a 31 bit unsigned integer from offset 4567. Similarly the command handles increments and decrements of the specified integers, providing guaranteed and well specified overflow and underflow behavior that the user can configure.
 
-    ```bash
-              127.0.0.1:6379> BITFIELD bike:1:stats SET u32 #0 1000
+There is only one single command with numerous arguments - **BITFIELD**
+
+  ```bash
+      127.0.0.1:6379> BITFIELD bike:1:stats SET u32 #0 1000
       1) (integer) 0
       127.0.0.1:6379> BITFIELD bike:1:stats INCRBY u32 #0 -50 INCRBY u32 #1 1
       1) (integer) 950
@@ -29,7 +31,7 @@ for example, a signed 5 bits integer at bit offset 1234 to a specific value, ret
       127.0.0.1:6379> BITFIELD bike:1:stats GET u32 #0 GET u32 #1
       1) (integer) 1450
       2) (integer) 2
-    ```
+  ```
 
 
 💡For more commands , explore at here ➡️ [link](https://redis.io/docs/latest/commands/bitfield/)
