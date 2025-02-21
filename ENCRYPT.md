@@ -47,33 +47,35 @@ we can apply security mechanisms by ACL . The steps to encrypt **redis-cli** und
   - **From ```default``` user , inside ```redis-cli```**
 
 
-  ```bash
-     127.0.0.1:6379> AUTH myuser mypassword
-     OK
-     127.0.0.1:6379> ACL WHOAMI
-     "myuser"
-  ```
+    ```bash
+       127.0.0.1:6379> AUTH myuser mypassword
+       OK
+       127.0.0.1:6379> ACL WHOAMI
+       "myuser"
+    ```
   
   - **Using an Url , directly to ```redis-cli```**
     (can use **localhost** , instead of **127.0.0.1**)
 
 
-  ```bash
-     root@rootuser:~$ redis-cli -u redis://myuser:mypassword@127.0.0.1:6379
-     Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
-     127.0.0.1:6379> ACL WHOAMI
-     "myuser"
-  ```
+    ```bash
+       root@rootuser:~$ redis-cli -u redis://myuser:mypassword@127.0.0.1:6379
+       Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
+       127.0.0.1:6379> ACL WHOAMI
+       "myuser"
+    ```
 
   - **Using username and password , directly to ```redis-cli```**
 
 
-  ```bash
-     root@rootuser:~$ redis-cli --user myuser --pass mypassword
-     Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
-     127.0.0.1:6379> ACL WHOAMI
-     "myuser"
-  ```
+
+
+    ```bash
+       root@rootuser:~$ redis-cli --user myuser --pass mypassword
+       Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
+       127.0.0.1:6379> ACL WHOAMI
+       "myuser"
+    ```
 
 - **Make Defaultuser off**
 
