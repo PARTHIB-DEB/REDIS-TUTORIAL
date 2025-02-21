@@ -35,7 +35,7 @@ we can apply security mechanisms by ACL . The steps to encrypt **redis-cli** und
 ```bash
    127.0.0.1:6379> ACL SAVE
    # or
-   127.0.0.1:6379> CONFIG REWRITE  (If error occurs in ACL SAVE , then this command will save this info in /etc/redis/redis.conf)
+   127.0.0.1:6379> CONFIG REWRITE  # (If error occurs in ACL SAVE , then this command will save this info in /etc/redis/redis.conf)
    OK
 ```
 🔦 **_Check if the new user's data is inserted or not by ➡️ ```nano /etc/redis/redis.conf``` and go at the end of the file_**
